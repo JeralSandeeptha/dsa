@@ -10,8 +10,8 @@
 - Second pointer for track `right`
 - Create a variable for track `middle` index
 - If target is present at mid then return mid
-- If target is greater, then move left to right side by +1
-- If target is lower, then move right to left side by -1
+- If target is greater, then move left to right side by mid+1
+- If target is lower, then move right to left side by mid-1
 - If right becomes lower than left, then stop the loop (because we can't find the element) 
 
 ```js
@@ -22,7 +22,7 @@ function binarySearch(arr, target) {
     // Run while loop uncless right becomes equals or greater than left
     while (left <= right) {
         // Calculate the middle index (prevents potential overflow)
-        let middle = Math.floor((right - left) / 2);
+        let middle = Math.floor((right + left) / 2);
 
         // Check if target is present at mid
         if (arr[middle] === target) {
