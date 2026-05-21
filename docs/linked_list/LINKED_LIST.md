@@ -176,3 +176,11 @@ ll.addToTail(2);
 
 console.log(ll);
 ```
+
+## Circular Linked List
+
+`Circular Linked List (CLL)` is a variation of a linked list where all nodes are connected to form a circle. Unlike a standard linked list, which ends with a node pointing to `NULL`, the last node in a CLL points back to the first node (the "head") or just a random node.
+
+![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1779404615/83759e8c-c160-47d7-a52c-53d785701862.png)
+
+For detect circles we can use [Floyd’s Cycle Detection Algorithm](../floyd_algorythem/FLOYD_ALGORYTHEM.md)
